@@ -1,23 +1,23 @@
-# Kris-Tof Dice Toss
+# Kris-Tof Sheridan.Christian.Dice Toss
 
-Create a `Dice` class that acts like a set of N random-tossed dies.
+Create a `Sheridan.Christian.Dice` class that acts like a set of N random-tossed dies.
 ```
-Dice dice = new Dice(2); // for craps
-Dice dice = new Dice(5); // for yatzee
+Sheridan.Christian.Dice dice = new Sheridan.Christian.Dice(2); // for craps
+Sheridan.Christian.Dice dice = new Sheridan.Christian.Dice(5); // for yatzee
 
 Integer toss = dice.tossAndSum();
 ```
-make a couple unit tests for the Dice class. 
+make a couple unit tests for the Sheridan.Christian.Dice class. 
 
-Create a tracking class `Bins` that can be used to track the results of dice tosses.
+Create a tracking class `Sheridan.Christian.Bins` that can be used to track the results of dice tosses.
 
 ```
-Bins results = new Bins(2, 12); // for bins from 2..12
+Sheridan.Christian.Bins results = new Sheridan.Christian.Bins(2, 12); // for bins from 2..12
 Integer numberOfTens = results.getBin(10); // returns the number of tens in the 10 bin
 results.incrementBin(10); // should increment bin # 10
 
 ```
-make a couple unit tests for the Bins class. Your test methods should follow this template:
+make a couple unit tests for the Sheridan.Christian.Bins class. Your test methods should follow this template:
 
     in the tests
     Create a new Bin
@@ -27,7 +27,7 @@ make a couple unit tests for the Bins class. Your test methods should follow thi
     
     
 
-Create a `Simulation` class whose Constructor takes arguments:
+Create a `Sheridan.Christian.Simulation` class whose Constructor takes arguments:
     numberOfDies to throw
     numberOfTosses to run
 
@@ -35,7 +35,7 @@ Create a simulation where two dies are thrown *one million times*.
 Keep track of each roll by incrementing the correct Bin.
 
 ```
-Simulation sim = new Simulation(2, 10000);
+Sheridan.Christian.Simulation sim = new Sheridan.Christian.Simulation(2, 10000);
 
 sim.runSimulation();
 
@@ -53,7 +53,7 @@ the results of the sim.printResults() should be an output string that looks like
 
 ```
 ***
-Simulation of 2 dice tossed for 1000000 times.
+Sheridan.Christian.Simulation of 2 dice tossed for 1000000 times.
 ***
 
  2 :    27917: 0.03 **
